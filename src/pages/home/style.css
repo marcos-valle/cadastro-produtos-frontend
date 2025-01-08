@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+h1 {
+  color: var(--text-dark);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-primary);
+  width: 30%;
+  margin-bottom: 0.6rem;
+
+  .disponivel {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    label {
+      color: var(--text-dark);
+    }
+
+  }
+
+  input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--text-dark);
+  }
+
+  button {
+    width: 20%;
+    all: unset;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--text-highlight);
+    color: var(--text-light);
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+}
+
+h3 {
+  color: var(--text-dark);
+}
+
+table {
+  border-collapse: collapse;
+  width: 28%;
+  margin-top: 0.5rem;
+  font-size: 85%;
+
+  
+  th {
+    background-color: var(--bg-primary);
+    padding: 0.5rem;
+    border-top: 1px solid var(--text-dark);
+    border-bottom: 1px solid var(--text-dark);
+  }
+
+  td {
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--text-dark);
+    border-bottom: 1px solid var(--text-dark);
+  }
+
+  tbody {
+    tr:hover {
+      background-color: var(--border-gray);
+    }
+  }
+}
